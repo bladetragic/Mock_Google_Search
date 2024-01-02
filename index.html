@@ -1,13 +1,35 @@
 <!DOCTYPE html>
 <html lang="en"> 
     <head> 
-        <title>Search</title> 
+        <title>Search</title>
+        <link rel="stylesheet" href="main_search_styles.css">
     </head> 
     
-    <body> 
-        <form action="https://www.google.com/search"> 
-            <input type="text" name="q"> 
-            <input type="submit" value="Google Search"> 
+    <body style="background-color: rgba(0, 0, 0, 0.900);"> 
+        
+        <!--Google logo-->
+        <div id = "logo">
+            <img src="Google_2015_logo.svg.png" alt="Google Logo" width="300">
+        </div>
+
+        <form action="https://www.google.com/search">    
+            
+                <!--Google search box-->
+                <div id="search_box">
+                    <input type="text" name="q" size="60px" style="height:40px; font-size:12pt; padding-left: 10px; border-radius:40px"> 
+                </div>
+                
+                <!--Google search buttons-->
+                <div id="search_button">
+                    <input type="submit" value="Google Search" style="margin: 5px;padding: 8px;">
+                    <input type="submit" value="I'm Feeling Lucky" style="padding: 8px;">
+                </div>         
         </form> 
+
+        <!--Image search & Advanced Search links-->
+        <div id="links">
+            <a href = "image_search.html" style="padding-right: 6px;">Images</a>
+            <a href = "advanced_search.html">Advanced Search</a>
+        </div>
     </body>
 </html>
