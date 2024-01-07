@@ -2,6 +2,113 @@
 <html lang="en">
     <head>
         <title>Advanced Search</title>
+        <link rel="stylesheet" href="advanced_search_stylesheet.css">
     </head>
 
+    <body> 
+        <!--Top Header/Banner-->
+        <div class="appbar">
+            <div class = "advanced_google_logo">
+                <img src="Google_2015_logo.svg.png" alt="Google Logo" width="75">
+                
+                <div class = "advanced_search_text">
+                    <span>Advanced Search</span>
+                </div>
+            </div>
+            <div class="links2">
+                <a href = "index.html" style="padding-right: 6px;">Google</a>
+                <a href = "image_search.html" style="padding-right:6px;">Images</a>
+            </div>
+            
+
+           
+
+            
+        </div>
+        
+        <!--Form-->
+        <div class="form_div">
+            <form action="/search" id=""> 
+
+                <!--Table Headers: "Find pages with..."" & "To do this in search box"-->
+                <div class="table_header">
+                    <div class="search_header1">
+                        <div class="label_box">
+                            <span>Find pages with...</span>
+                        </div>
+                    </div> 
+
+                    <!--Empty Block between headers-->
+                    <div class="spaceblock">
+                        &nbsp;
+                    </div>
+
+                    <div class="search_header2">
+                        <div class="label_box">To do this in the search box</div>
+                    </div>
+                </div>
+                
+                <!--Advanced search boxes-->
+
+                <!--all these words:-->
+                <div class = "advanced_search_box">
+                    <div class="input_labels">
+                        <label for="input1">all these words:</label>
+                    </div>
+                    <div class="advanced_input_box">
+                        <input class="advanced_input" id="input1" type="text" name="q" size="80px"> 
+                    </div>
+                    <div class="input_labels_2">
+                        <span>Type the important words:  tricolor rat terrier</span>
+                    </div>
+                </div>
+                
+                <!--this exact word or phrase:-->
+                <div class = "advanced_search_box">
+                    <div class="input_labels">
+                        <label for="input1">this exact word or phrase:</label>
+                    </div>
+                    <div class="advanced_input_box">
+                        <input class="advanced_input" id="input1" type="text" name="q" size="80px"> 
+                    </div>
+                    <div class="input_labels_2">
+                        <span>Put exact words in quotes:  "rat terrier"</span>
+                    </div>
+                </div>
+                
+                <!--any of these words:-->
+                <div class = "advanced_search_box">
+                    <div class="input_labels">
+                        <label for="input1">any of these words:</label>
+                    </div>
+                    <div class="advanced_input_box">
+                        <input class="advanced_input" id="input1" type="text" name="q" size="80px"> 
+                    </div>
+                    <div class="input_labels_2">
+                        <span>Type OR between all the words you want:  miniature OR standard</span>
+                    </div>
+                </div>
+
+                <!--none of these words:-->
+                <div class = "advanced_search_box">
+                    <div class="input_labels">
+                        <label for="input1">none of these words:</label>
+                    </div>
+                    <div class="advanced_input_box">
+                        <input class="advanced_input" id="input1" type="text" name="q" size="80px"> 
+                    </div>
+                    <div class="input_labels_2">
+                        <span>Put a minus sign just before words you don't want:  -rodent, -"Jack Russell"</span>
+                        <div>-rodent, -"Jack Russell"</div>
+                    </div>
+                </div>
+                
+
+                <!--Advanced search buttons-->
+                <div class="advanced_search_button">
+                    <input type="submit" value="Advanced Search"> 
+                </div>         
+            </form> 
+        </div>
+    </body>
 </html>
